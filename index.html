@@ -3,75 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Brianna Stopper — Design Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
-            <a href="#home" class="logo">UX / HCI Portfolio</a>
+            <a href="#home" class="logo">Brianna Stopper</a>
 
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <h1 id="home">Brianna Stopper</h1>
-        <p class="tagline">Design Portfolio</p>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <p class="hero-eyebrow">UX &amp; HCI Designer</p>
+            <h1>Brianna Stopper</h1>
+            <p class="tagline">Design Portfolio</p>
+            <p class="hero-intro">
+                I'm a Human-Computer Interaction graduate student designing
+                human-centered, research-driven interfaces — with a focus on
+                human-AI interaction.
+                <!-- TODO: personalize this one-liner -->
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">View Work</a>
+                <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+            </div>
+        </section>
 
+        <!-- About -->
         <section id="about">
             <h2>About Me</h2>
             <p>
                 I am a graduate student studying
                 Human-Computer Interaction and User Experience Design at Pace University.
+                <!-- TODO: expand with your background, interests, and what drives your design work. -->
             </p>
+
+            <ul class="skills" aria-label="Skills and tools">
+                <li>User Research</li>
+                <li>Usability Testing</li>
+                <li>Prototyping</li>
+                <li>Interaction Design</li>
+                <li>Figma</li>
+                <li>Human-AI Interaction</li>
+            </ul>
         </section>
 
+        <!-- Projects -->
         <section id="projects">
             <h2>My Projects</h2>
 
             <div class="project-grid">
 
-                <article class="project-card">
+                <!-- TODO: point href to a case-study page (e.g. projects/ai-voice.html) -->
+                <a class="project-card" href="#projects" aria-label="View project: AI Voice &amp; Decision-Making">
+                    <!-- TODO: replace placeholder with a project thumbnail:
+                         <img class="project-thumb" src="images/ai-voice.jpg" alt="..."> -->
+                    <div class="project-thumb" aria-hidden="true">
+                        <span>Project Image</span>
+                    </div>
                     <div class="project-content">
-                        <span class="project-category">
-                            HUMAN-AI INTERACTION
-                        </span>
-
+                        <span class="project-category">HUMAN-AI INTERACTION</span>
                         <h3>AI Voice &amp; Decision-Making</h3>
-
                         <p>
-                            Exploring how urgency in an AI
-                            agent's voice influences human
-                            decision-making.
+                            Exploring how urgency in an AI agent's voice
+                            influences human decision-making.
                         </p>
+                        <span class="project-link">View case study &rarr;</span>
                     </div>
-                </article>
+                </a>
 
-                <article class="project-card">
+                <!-- TODO: point href to a case-study page (e.g. projects/ux-research.html) -->
+                <a class="project-card" href="#projects" aria-label="View project: UX Research &amp; Prototyping">
+                    <div class="project-thumb" aria-hidden="true">
+                        <span>Project Image</span>
+                    </div>
                     <div class="project-content">
-                        <span class="project-category">
-                            UX DESIGN
-                        </span>
-
+                        <span class="project-category">UX DESIGN</span>
                         <h3>UX Research &amp; Prototyping</h3>
-
                         <p>
-                            Exploring user-centered design,
-                            usability testing, and
-                            interactive prototypes.
+                            Exploring user-centered design, usability testing,
+                            and interactive prototypes.
                         </p>
+                        <span class="project-link">View case study &rarr;</span>
                     </div>
-                </article>
+                </a>
 
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>
+                Interested in working together or want to learn more about my work?
+                I'd love to hear from you.
+            </p>
+            <div class="contact-links">
+                <!-- TODO: replace placeholders with your real links -->
+                <a class="btn btn-primary" href="mailto:your.email@example.com">Email Me</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="btn btn-ghost" href="https://github.com/breestopper" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
             </div>
         </section>
     </main>
 
+    <footer class="site-footer">
+        <p>&copy; <span id="year">2026</span> Brianna Stopper. Designed &amp; built with care.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

@@ -2,83 +2,66 @@
 :root {
     --background: #f8f9fc;
     --text: #202638;
+    --muted: #41495a;
     --accent: #5956a6;
+    --accent-2: #8db5e8;
     --surface: #ffffff;
+    --border: #dddfea;
+    --heading-font: "Space Grotesk", Arial, sans-serif;
+    --body-font: "Inter", Arial, sans-serif;
+}
+
+/* Smooth anchor scrolling (nav + CTA buttons) */
+html {
+    scroll-behavior: smooth;
 }
 
 /* General page styling */
 body {
     margin: 0;
-    padding: 60px 8%;
+    padding: 40px 8% 0;
     background-color: var(--background);
     color: var(--text);
-    font-family: Arial, sans-serif;
+    font-family: var(--body-font);
     line-height: 1.7;
 }
 
-/* Main heading */
+/* Headings */
 h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: var(--heading-font);
+    font-size: clamp(2.5rem, 5vw, 4.25rem);
     letter-spacing: -2px;
-    line-height: 1.15;
-    margin-bottom: 30px;
+    line-height: 1.1;
+    margin: 0 0 12px;
 }
 
-/* Subtitle under the main heading */
-.tagline {
-    margin-top: -16px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--accent);
-    letter-spacing: 0.5px;
-}
-
-/* Section headings */
 h2 {
+    font-family: var(--heading-font);
     font-size: 1.6rem;
-    margin-top: 60px;
+    margin-top: 72px;
     padding-bottom: 12px;
-    border-bottom: 1px solid #dddfea;
+    border-bottom: 1px solid var(--border);
+}
+
+h3 {
+    font-family: var(--heading-font);
 }
 
 /* Paragraph styling */
 p {
     max-width: 680px;
     font-size: 1.1rem;
-    color: #41495a;
-}
-
-/* Subtle futuristic accent */
-h1::after {
-    content: "";
-    display: block;
-    width: 90px;
-    height: 4px;
-    margin-top: 24px;
-    background: linear-gradient(
-        90deg,
-        #5956a6,
-        #8db5e8
-    );
-    border-radius: 4px;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-    body {
-        padding: 30px 6%;
-    }
-
-    h1 {
-        letter-spacing: -1px;
-    }
+    color: var(--muted);
 }
 
 /* Navigation bar */
-
 .site-header {
-    margin-bottom: 80px;
-    border-bottom: 1px solid #dddfea;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
+    z-index: 10;
 }
 
 .navbar {
@@ -86,12 +69,13 @@ h1::after {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
-    padding-bottom: 24px;
+    padding: 18px 0;
 }
 
 .logo {
+    font-family: var(--heading-font);
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--text);
     text-decoration: none;
 }
@@ -106,6 +90,7 @@ h1::after {
     color: var(--text);
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 500;
     transition: color 0.2s ease;
 }
 
@@ -114,31 +99,113 @@ h1::after {
 }
 
 /* Keyboard accessibility */
-
-.navbar a:focus-visible {
+.navbar a:focus-visible,
+.btn:focus-visible,
+.project-card:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 5px;
 }
 
-/* Mobile navigation */
-
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        gap: 20px;
-    }
-
-    .site-header {
-        margin-bottom: 40px;
-    }
+/* ---------- Hero ---------- */
+.hero {
+    padding: 40px 0 20px;
 }
 
-/* Project grid */
+.hero-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 16px;
+}
 
+.tagline {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    margin: 0 0 24px;
+}
+
+/* Accent bar sits under the name/tagline block */
+.tagline::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    border-radius: 4px;
+}
+
+.hero-intro {
+    font-size: 1.2rem;
+    max-width: 640px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.2s ease,
+                background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #ffffff;
+    border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(89, 86, 166, 0.3);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--border);
+}
+
+.btn-ghost:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* ---------- Skills strip ---------- */
+.skills {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+/* ---------- Project grid ---------- */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -146,15 +213,15 @@ h1::after {
     margin-top: 30px;
 }
 
-/* Project cards */
-
 .project-card {
+    display: block;
     background: var(--surface);
-    border: 1px solid #dddfea;
+    border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
@@ -162,20 +229,41 @@ h1::after {
     box-shadow: 0 12px 30px rgba(32, 38, 56, 0.08);
 }
 
+/* Styled image placeholder — swap for an <img> later */
+.project-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: rgba(255, 255, 255, 0.85);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+img.project-thumb {
+    display: block;
+    object-fit: cover;
+}
+
 .project-content {
-    padding: 30px;
+    padding: 28px 30px 30px;
 }
 
 .project-category {
     color: var(--accent);
     font-size: 0.75rem;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1.5px;
 }
 
 .project-card h3 {
     font-size: 1.4rem;
-    margin: 16px 0;
+    margin: 14px 0;
 }
 
 .project-card p {
@@ -183,23 +271,82 @@ h1::after {
     line-height: 1.6;
 }
 
-/* Responsive project layout */
+.project-link {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
 
+.project-card:hover .project-link {
+    text-decoration: underline;
+}
+
+/* ---------- Contact ---------- */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    margin-top: 90px;
+    padding: 30px 0 40px;
+    border-top: 1px solid var(--border);
+}
+
+.site-footer p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin: 0;
+}
+
+/* ---------- Responsive ---------- */
 @media (max-width: 700px) {
     .project-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* Respect reduced-motion preferences */
-
-@media (prefers-reduced-motion: reduce) {
-    .project-card {
-        transition: none;
+@media (max-width: 600px) {
+    body {
+        padding: 20px 6% 0;
     }
 
-    .project-card:hover {
-        transform: none;
+    h1 {
+        letter-spacing: -1px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .site-header {
+        position: static;
     }
 }
 
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .project-card,
+    .btn {
+        transition: none;
+    }
+
+    .project-card:hover,
+    .btn:hover {
+        transform: none;
+    }
+}
