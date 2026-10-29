@@ -1,0 +1,67 @@
+
+/* Portfolio color palette */
+:root {
+    --background: #f8f9fc;
+    --text: #202638;
+    --accent: #5956a6;
+    --surface: #ffffff;
+}
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 60px 8%;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Main heading */
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: -2px;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 1.6rem;
+    margin-top: 60px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dddfea;
+}
+
+/* Paragraph styling */
+p {
+    max-width: 680px;
+    font-size: 1.1rem;
+    color: #41495a;
+}
+
+/* Subtle futuristic accent */
+h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    margin-top: 24px;
+    background: linear-gradient(
+        90deg,
+        #5956a6,
+        #8db5e8
+    );
+    border-radius: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 30px 6%;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+    }
+}
