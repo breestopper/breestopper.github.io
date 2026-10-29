@@ -65,3 +65,67 @@ h1::after {
         letter-spacing: -1px;
     }
 }
+
+/* Navigation bar */
+
+.site-header {
+    margin-bottom: 80px;
+    border-bottom: 1px solid #dddfea;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 24px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* Keyboard accessibility */
+
+.navbar a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 5px;
+}
+
+/* Mobile navigation */
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .site-header {
+        margin-bottom: 40px;
+    }
+}
+
