@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brianna Stopper — Design Portfolio</title>
+    <title>Brianna Stopper · Human-centered design researcher</title>
+    <meta name="description" content="Brianna Stopper is a human-centered design researcher studying how people understand, trust, and make decisions with technology.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,135 +13,195 @@
 </head>
 <body>
     <header class="site-header">
-        <nav class="navbar" aria-label="Main navigation">
-            <a href="#home" class="logo">Brianna Stopper</a>
-
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
+        <div class="wrap">
+            <a class="brand" href="index.html">Brianna Stopper</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html#work">Work</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- Hero -->
-        <section class="hero" id="home">
-            <p class="hero-eyebrow">Human-Centered Design</p>
-            <h1>Brianna Stopper</h1>
-            <p class="tagline">Design Portfolio</p>
-            <p class="hero-intro">
-                I'm a Human-Centered Design graduate student passionate about
-                AI Product Management, Explainable AI, and Human-AI Collaboration —
-                turning user insights into evidence-based product decisions.
-            </p>
-            <div class="hero-actions">
-                <a class="btn btn-primary" href="#projects">View Work</a>
-                <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        <section class="wrap hero" id="top">
+            <span class="label">Human-centered design researcher · New York City area</span>
+            <h1>I research how people understand, trust, and make decisions with technology, and I turn what I learn into product direction.</h1>
+            <div class="hero-meta"><span class="label">MS in Human-Centered Design, Pace University, May 2027</span></div>
+        </section>
+
+        <!-- Work: each project is one <a class="work-row"> block. Copy a block to add a project. -->
+        <section class="section" id="work">
+            <div class="wrap">
+                <div class="section-head"><h2>Selected work</h2><span class="label">5 projects</span></div>
+                <div class="work-list">
+                <a class="work-row" href="projects/nyc-data-trail.html">
+                    <div class="figure-tile">
+                        <span class="num">92.8</span>
+                        <span class="label">SUS score</span>
+                    </div>
+                    <div class="work-body">
+                        <h3><span class="title-text">The NYC Data Trail</span></h3>
+                        <p>A gamified map that explains the smart-city sensors in your neighborhood and what they do with your data.</p>
+                        <span class="label">Survey · Interviews · Usability testing · n = 10</span>
+                    </div>
+                </a>
+
+                <a class="work-row" href="projects/amc-app-redesign.html">
+                    <div class="figure-tile">
+                        <span class="num">87</span>
+                        <span class="label">SUS score</span>
+                    </div>
+                    <div class="work-body">
+                        <h3><span class="title-text">AMC Theatres app redesign</span></h3>
+                        <p>Simplifying ticket booking, making membership benefits visible, and bringing group planning into the app.</p>
+                        <span class="label">Interviews · Personas · Hi-fi prototype · Usability testing · n = 5</span>
+                    </div>
+                </a>
+
+                <a class="work-row" href="projects/deciding-under-pressure.html">
+                    <div class="figure-tile">
+                        <span class="num">2 × 3</span>
+                        <span class="label">experiment design</span>
+                    </div>
+                    <div class="work-body">
+                        <h3><span class="title-text">Deciding Under Pressure</span> <span class="pill">In progress</span></h3>
+                        <p>An experiment on whether the tone an AI agent uses changes the decisions people make when it asks for approval.</p>
+                        <span class="label">Experiment · Literature review · Survey · In progress</span>
+                    </div>
+                </a>
+
+                <a class="work-row" href="projects/mentage.html">
+                    <div class="figure-tile">
+                        <span class="num">15</span>
+                        <span class="label">week collaboration</span>
+                    </div>
+                    <div class="work-body">
+                        <h3><span class="title-text">Mentage usability project</span></h3>
+                        <p>A 15-week collaboration with Mentage, a cognitive health app, covering competitive analysis and a research plan for its first year.</p>
+                        <span class="label">Competitive analysis · Research planning</span>
+                    </div>
+                </a>
+
+                <a class="work-row" href="projects/ai-collaboration.html">
+                    <div class="figure-tile">
+                        <span class="num">3</span>
+                        <span class="label">assistants compared</span>
+                    </div>
+                    <div class="work-body">
+                        <h3><span class="title-text">AI as assistant, AI as collaborator</span> <span class="pill">Ongoing</span></h3>
+                        <p>Independent research that began as a comparison of Alexa, ChatGPT, and Gemini and now asks how working with AI changes the way people think.</p>
+                        <span class="label">Comparative evaluation · Independent · Ongoing</span>
+                    </div>
+                </a>
+                </div>
             </div>
         </section>
 
         <!-- About -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a Human-Centered Design graduate student at Pace University's
-                Seidenberg School of Computer Science and Information Systems
-                (MS, expected May 2027), with a background in Visual Communication
-                Design from Ramapo College of New Jersey.
-            </p>
-            <p>
-                My work spans UX research, design thinking, and evidence-based
-                product development. I'm especially interested in AI Product
-                Management, Explainable AI, and Human-AI Collaboration — translating
-                user insights into product requirements, facilitating cross-functional
-                collaboration, and evaluating AI systems for usability, trust, and
-                responsible deployment.
-            </p>
-
-            <ul class="skills" aria-label="Skills and tools">
-                <li>UX Research</li>
-                <li>Design Thinking</li>
-                <li>Usability Metrics</li>
-                <li>Figma</li>
-                <li>Adobe Creative Suite</li>
-                <li>Miro</li>
-                <li>Canva</li>
-                <li>HTML / CSS / JavaScript</li>
-                <li>Scrum &amp; Kanban</li>
-                <li>Human-AI Interaction</li>
-            </ul>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects">
-            <h2>My Projects</h2>
-
-            <div class="project-grid">
-
-                <a class="project-card" href="projects/ai-voice.html" aria-label="View project: Agentic AI Study">
-                    <!-- TODO: replace placeholder with a project thumbnail:
-                         <img class="project-thumb" src="images/agentic-ai.jpg" alt="..."> -->
-                    <div class="project-thumb" aria-hidden="true">
-                        <span>Project Image</span>
+        <section class="section" id="about">
+            <div class="wrap">
+                <div class="section-head"><h2>About</h2></div>
+                <div class="about-grid">
+                    <div class="prose">
+                        <p>I'm a graduate student in Human-Centered Design at Pace University's Seidenberg School. My work sits where research meets product: interviews, surveys, usability testing, and competitive analysis that end in a clear recommendation about what to build or change.</p>
+                        <p>Before grad school I spent ten years as a visual merchandiser at Target, designing sales-floor experiences around how customers actually move and shop. I also hold a BA in Visual Communication Design with a minor in Creative Writing from Ramapo College. That mix of retail floor, visual design, and writing shapes how I run studies and how I report them.</p>
+                        <p>Right now I'm most interested in AI product work: explainable AI, human-AI collaboration, and how the way an AI system communicates changes what people do with it.</p>
+                        <p class="quiet">Away from research: documentaries, history, tarot cards, knitting, and reading.</p>
                     </div>
-                    <div class="project-content">
-                        <span class="project-category">HUMAN-AI INTERACTION</span>
-                        <h3>Agentic AI Study</h3>
-                        <p>
-                            Comparing AI platforms — Amazon Alexa, ChatGPT, and
-                            Google Gemini — to evaluate their responses and
-                            investigate confirmation bias in AI-generated output.
-                        </p>
-                        <span class="project-link">View case study &rarr;</span>
+                    <div class="facts">
+                        <div class="fact-group"><span class="label">Education</span>
+                        <ul class="fact-list">
+                            <li><span>Pace University, Seidenberg School of CSIS</span><span class="when">May 2027</span><span class="sub">MS, Human-Centered Design</span></li>
+                            <li><span>Ramapo College of New Jersey</span><span class="when">May 2023</span><span class="sub">BA, Visual Communication Design. Minor in Creative Writing</span></li>
+                        </ul></div>
+                        <div class="fact-group"><span class="label">Experience</span>
+                        <ul class="fact-list">
+                            <li><span>Target</span><span class="when">2015 – 2025</span><span class="sub">Visual Merchandiser</span></li>
+                            <li><span>National Society of Leadership and Success, Ramapo</span><span class="when">2022 – 2023</span><span class="sub">Social Media Chair</span></li>
+                            <li><span>Hot Topic</span><span class="when">2012 – 2015</span><span class="sub">Key Holder</span></li>
+                        </ul></div>
                     </div>
-                </a>
-
-                <!-- TODO: point href to a case-study page (e.g. projects/mentage.html) -->
-                <a class="project-card" href="#projects" aria-label="View project: Mentage Competitive Analysis">
-                    <div class="project-thumb" aria-hidden="true">
-                        <span>Project Image</span>
+                </div>
+                <div class="skills">
+                    <div><span class="label">Research</span>
+                        <ul>
+                            <li>Semi-structured interviews</li>
+                            <li>Surveys</li>
+                            <li>Usability testing</li>
+                            <li>Field studies</li>
+                            <li>Competitive analysis</li>
+                            <li>System Usability Scale (SUS)</li>
+                            <li>Affinity mapping</li>
+                            <li>Personas</li>
+                        </ul>
                     </div>
-                    <div class="project-content">
-                        <span class="project-category">UX RESEARCH</span>
-                        <h3>Mentage Competitive Analysis</h3>
-                        <p>
-                            A competitive analysis for Mentage, benchmarking their
-                            app against the market to guide pre-release adjustments
-                            (Pace University collaboration).
-                        </p>
-                        <span class="project-link">Coming soon</span>
+                    <div><span class="label">AI and product</span>
+                        <ul>
+                            <li>AI platform evaluation</li>
+                            <li>Explainable AI</li>
+                            <li>Human-AI collaboration</li>
+                            <li>Experiment design</li>
+                            <li>Scrum and Kanban</li>
+                        </ul>
                     </div>
-                </a>
-
+                    <div><span class="label">Design and tools</span>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe Creative Suite</li>
+                            <li>Canva</li>
+                            <li>Prototyping</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>
-                Interested in working together or want to learn more about my work?
-                I'd love to hear from you.
-            </p>
-            <div class="contact-links">
-                <a class="btn btn-primary" href="mailto:bree.n.stopper@pace.edu">Email Me</a>
-                <!-- TODO: replace with your real LinkedIn profile URL -->
-                <a class="btn btn-ghost" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
-                <a class="btn btn-ghost" href="https://github.com/breestopper" target="_blank" rel="noopener">GitHub</a>
-                <!-- TODO: upload resume.pdf to the repo root for this link to work -->
-                <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <section class="section contact" id="contact">
+            <div class="wrap">
+                <span class="label">Contact</span>
+                <h2>Interested in UX research and AI product roles. Let's talk.</h2>
+                <div class="contact-rows">
+                    <div class="contact-row"><span class="label">Email</span>
+                        <a class="value" id="email" href="mailto:bree.stopper@gmail.com">bree.stopper@gmail.com</a>
+                        <button class="copy-btn" id="copy-email" type="button">Copy</button></div>
+                    <div class="contact-row"><span class="label">LinkedIn</span>
+                        <a class="value" href="https://www.linkedin.com/in/briannanicolestopper" target="_blank" rel="noopener">linkedin.com/in/briannanicolestopper</a></div>
+                    <div class="contact-row"><span class="label">GitHub</span>
+                        <a class="value" href="https://github.com/breestopper" target="_blank" rel="noopener">github.com/breestopper</a></div>
+                    <!-- To add your resume: put resume.pdf in this folder, then un-comment the lines below.
+                    <div class="contact-row"><span class="label">Resume</span>
+                        <a class="value" href="resume.pdf" target="_blank" rel="noopener">View resume (PDF)</a></div>
+                    -->
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>&copy; <span id="year">2026</span> Brianna Stopper. Designed &amp; built with care.</p>
+        <div class="wrap">
+            <span>&copy; <span id="year">2026</span> Brianna Stopper</span>
+            <a href="#top">Back to top</a>
+            <p class="footer-note">Course projects shown here were completed by Pace University students for academic purposes only and are not affiliated with any company.</p>
+        </div>
     </footer>
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Copy-email button
+        var copyBtn = document.getElementById("copy-email");
+        copyBtn.addEventListener("click", function () {
+            var email = document.getElementById("email").textContent;
+            if (!navigator.clipboard) return;
+            navigator.clipboard.writeText(email).then(function () {
+                copyBtn.textContent = "Copied";
+                setTimeout(function () { copyBtn.textContent = "Copy"; }, 1800);
+            });
+        });
     </script>
 </body>
 </html>
