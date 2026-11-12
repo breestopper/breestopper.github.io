@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMC Theatres app redesign · Brianna Stopper</title>
+    <meta name="description" content="Simplifying ticket booking, making membership benefits visible, and bringing group planning into the app.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="../index.html">Brianna Stopper</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="wrap" id="top">
+            <header class="case-head">
+                <a class="back" href="../index.html#work">&larr; All work</a>
+                <h1>AMC Theatres app redesign</h1>
+                <p class="lede">Simplifying ticket booking, making membership benefits visible, and bringing group planning into the app.</p>
+            </header>
+
+            <dl class="meta-grid">
+                <div><dt class="label">Role</dt><dd>UX researcher and designer. Ran two of the five usability sessions</dd></div>
+                <div><dt class="label">Team</dt><dd>Three designers</dd></div>
+                <div><dt class="label">Timeline</dt><dd>Fall 2025</dd></div>
+                <div><dt class="label">Context</dt><dd>Introduction to UX Design, Pace University</dd></div>
+                <div><dt class="label">Tools</dt><dd>Figma, POP by Marvel, Zoom</dd></div>
+                <div><dt class="label">Note</dt><dd>Academic project by Pace University students, for educational purposes only. Not affiliated with AMC Theatres</dd></div>
+            </dl>
+
+            <div class="case-body">
+                <section class="case-section">
+                    <h2>The problem</h2>
+                    <div class="case-content">
+                        <div class="prose">
+                            <p>People like going to AMC for the immersive screens and the ability to pick a seat. The app is where the experience gets harder. Our goal was to help people book faster, coordinate with friends more easily, and get more from the app than a ticket.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>Research</h2>
+                    <div class="case-content">
+                        <div class="prose">
+                            <p>We ran six semi-structured interviews of 45 to 50 minutes each, combining questions with observed tasks in the current app. Two participants used the app often and four used it occasionally. We grouped what we heard into an affinity diagram with five clusters and built two personas from it: Anna, who plans movie nights for a group, and Alex, an enthusiast who wants trailers, reviews, and favorites.</p>
+                        </div>
+                        <blockquote class="quote"><p>&ldquo;We coordinate seats over chat… then one person books.&rdquo;</p><span class="label">Interview participant</span></blockquote>
+                        <ul class="bullets">
+                            <li>Going to the movies is social. People pick seats over group chat, then one person books and collects money later.</li>
+                            <li>Frequent users found the app efficient. Occasional users found it cluttered and overwhelming.</li>
+                            <li>Few people knew what their AMC Stubs membership gave them until late in checkout.</li>
+                            <li>People value ordering food ahead, but the menu is inconsistent and slow to browse.</li>
+                            <li>People wanted reminders, reviews, and saved favorites.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>Four problems to solve</h2>
+                    <div class="case-content">
+                        <ol class="steps">
+                            <li><strong>Cluttered information</strong><span>Too many options at once, and a theatre list that jumped between locations.</span></li>
+                            <li><strong>Hidden membership value</strong><span>Stubs benefits were not explained where people make decisions.</span></li>
+                            <li><strong>Group planning outside the app</strong><span>No way to coordinate seats or split the cost with friends.</span></li>
+                            <li><strong>Nothing beyond booking</strong><span>No reason to open the app except to buy a ticket.</span></li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>The redesign</h2>
+                    <div class="case-content">
+                        <div class="prose">
+                            <p>We sketched the flows as low-fidelity wireframes first, linked them into a clickable prototype, then built the high-fidelity version in Figma in AMC's existing visual style.</p>
+                        </div>
+                        <ul class="bullets">
+                            <li>Choose a theatre first, with favorites up top and only locations that have showtimes.</li>
+                            <li>Membership details on the home screen and the movie page, with reward progress and a side-by-side comparison of tiers.</li>
+                            <li>A reorganized food menu with combos and popular items first.</li>
+                            <li>Split the bill: assign seats to friends and divide the cost evenly or by hand.</li>
+                            <li>Share a showtime link to a group chat.</li>
+                            <li>Follow a movie or theatre to get reminders, and rate and review films in the app.</li>
+                        </ul>
+                        <div class="case-images">
+                            <figure>
+                                <img src="../images/amc-wireframes-booking.jpg" alt="Low-fidelity wireframes of the movie page, membership plans, ticket selection, and food menu" loading="lazy">
+                                <figcaption>Low-fidelity wireframes for the booking flow.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../images/amc-hifi-booking.jpg" alt="High-fidelity screens: home with a theatre selector, a movie page with showtimes, seat selection, and membership plans" loading="lazy">
+                                <figcaption>Booking flow. The theatre is chosen first, and membership plans can be compared side by side.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../images/amc-hifi-membership-food.jpg" alt="High-fidelity screens: ticket selection with membership savings, the upgrade screen, the food menu with best sellers, and past orders" loading="lazy">
+                                <figcaption>Membership savings shown at ticket selection, and the food menu with best sellers and past orders on one screen.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../images/amc-split-equal.jpg" alt="Split the bill screens: payment options, an equal split between two people, and choosing a contact" loading="lazy">
+                                <figcaption>Split the bill, equal split.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../images/amc-split-custom.jpg" alt="Split the bill screens: assigning each ticket and food item to a person in a custom split" loading="lazy">
+                                <figcaption>Split the bill, custom split. Each ticket and food item is assigned to a person.</figcaption>
+                            </figure>
+                            <figure class="medium">
+                                <img src="../images/amc-payment-status.jpg" alt="Payment status screens showing who in the group has paid and who is pending" loading="lazy">
+                                <figcaption>Group payment status, with a timer holding the order.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../images/amc-reminders.jpg" alt="Reminder screens: coming soon movies, setting a reminder, and the list of active reminders" loading="lazy">
+                                <figcaption>Reminders for upcoming movies.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>Testing the prototype</h2>
+                    <div class="case-content">
+                        <div class="stats">
+                            <div class="stat"><span class="num">87</span><span class="cap">average SUS score, in the excellent range. Individual scores ran from 72.5 to 100</span></div>
+                            <div class="stat"><span class="num">4 of 5</span><span class="cap">said the redesigned flow reduced mental effort</span></div>
+                            <div class="stat"><span class="num">5 of 5</span><span class="cap">preferred the built-in split payment to using a separate app</span></div>
+                        </div>
+                        <div class="prose">
+                            <p>Five people took part in moderated remote sessions of 25 to 30 minutes. Each worked through four scenarios in the Figma prototype: booking, membership, split the bill, and reminders. We recorded task success, error types, and completion time, and finished with the System Usability Scale.</p>
+                        </div>
+                        <blockquote class="quote"><p>&ldquo;This eliminates having to use an external app to figure out payments.&rdquo;</p><span class="label">Usability test participant</span></blockquote>
+                        <ul class="bullets">
+                            <li>Membership tiers were clear to all five once found, but finding them was harder. One participant tapped the profile icon first, expecting membership to be there.</li>
+                            <li>Three of five expected their reminder list under their profile, not in Coming Soon. Two asked for calendar syncing or sharing.</li>
+                            <li>Three preferred the custom split for fairness and two chose the equal split for speed. The custom split felt slow because items are assigned one at a time.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>What I would change next</h2>
+                    <div class="case-content">
+                        <ul class="bullets">
+                            <li>Shorten the custom split, and test letting each person add their own items.</li>
+                            <li>Give clearer confirmation when a reminder is set, and explore calendar syncing and sharing.</li>
+                            <li>Make membership easier to find, including from the profile.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="next-project" aria-label="Next project">
+                <span class="label">Next project</span>
+                <a href="deciding-under-pressure.html">Deciding Under Pressure &rarr;</a>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>&copy; <span id="year">2026</span> Brianna Stopper</span>
+            <a href="#top">Back to top</a>
+            <p class="footer-note">Course projects shown here were completed by Pace University students for academic purposes only and are not affiliated with any company.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

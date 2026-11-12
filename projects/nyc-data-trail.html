@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The NYC Data Trail · Brianna Stopper</title>
+    <meta name="description" content="A gamified map that explains the smart-city sensors in your neighborhood and what they do with your data.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="../index.html">Brianna Stopper</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="wrap" id="top">
+            <header class="case-head">
+                <a class="back" href="../index.html#work">&larr; All work</a>
+                <h1>The NYC Data Trail</h1>
+                <p class="lede">A gamified map that explains the smart-city sensors in your neighborhood and what they do with your data.</p>
+            </header>
+
+            <dl class="meta-grid">
+                <div><dt class="label">Role</dt><dd>UX researcher. Ran participant interviews and field-test sessions, co-wrote the report</dd></div>
+                <div><dt class="label">Team</dt><dd>Four graduate researchers</dd></div>
+                <div><dt class="label">Timeline</dt><dd>September – December 2025</dd></div>
+                <div><dt class="label">Context</dt><dd>IS 628 Research Methods for UX, Pace University</dd></div>
+                <div><dt class="label">Tools</dt><dd>Figma, Zoom, Google Forms</dd></div>
+                <div><dt class="label">Note</dt><dd>Academic project by Pace University students, for educational purposes only. Not affiliated with any company or agency</dd></div>
+            </dl>
+
+            <div class="case-body">
+                <section class="case-section">
+                    <h2>The problem</h2>
+                    <div class="case-content">
+                        <div class="prose">
+                            <p>New York City already runs flood sensors, air-quality monitors, noise sensors, and LinkNYC kiosks. Most residents walk past them without knowing what they are, what data they collect, or who is responsible for them. People tend to find out about city infrastructure only when a street is torn up or a service goes down.</p>
+                            <p>That gap matters more as the city explores larger projects such as utilidors, the shared underground tunnels that carry pipes and cables. These projects depend on public understanding and trust. We set out to learn how residents relate to smart-city infrastructure today and what would help them engage with it.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>What we learned first</h2>
+                    <div class="case-content">
+                        <div class="stats">
+                            <div class="stat"><span class="num">14</span><span class="cap">survey responses</span></div>
+                            <div class="stat"><span class="num">9 of 14</span><span class="cap">not involved in community planning at all</span></div>
+                            <div class="stat"><span class="num">1 of 14</span><span class="cap">wanted to stay uninvolved</span></div>
+                        </div>
+                        <div class="prose">
+                            <p>We started with a literature review and a comparative analysis, then ran a community survey with residents of Brooklyn and Manhattan and followed up with semi-structured interviews.</p>
+                            <p>The survey showed a clear gap between how involved people are in community planning and how involved they want to be.</p>
+                        </div>
+                        <blockquote class="quote"><p>&ldquo;I would love to participate in more community planning initiatives. I guess I just don't know where to start to look on how to get involved.&rdquo;</p><span class="label">Survey participant</span></blockquote>
+                        <ul class="bullets">
+                            <li>Residents said local government rarely tells them about infrastructure changes.</li>
+                            <li>People were uneasy about how data from sensors would be handled.</li>
+                            <li>They still valued sensors that catch problems before they become expensive to repair.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>The design</h2>
+                    <div class="case-content">
+                        <div class="prose">
+                            <p>The NYC Data Trail is a map of the city's smart devices paired with a sign at each physical location. Scanning the sign's QR code opens that device's page: what it is, why it is there, who sponsors it, what data it collects, and what the data is used for. An AR view shows how the device works.</p>
+                            <p>Creating an account is optional. People who do can earn points and badges for scanning devices, leave comments on a device, and see what their neighbors think.</p>
+                        </div>
+                        <div class="case-images">
+                            <figure class="narrow">
+                                <img src="../images/data-trail-sign.jpg" alt="NYC Data Trail sign for a flood level sensor, with a QR code, the device sponsor's contact details, and a link to the website" loading="lazy">
+                                <figcaption>The sign posted at each device. Scanning the QR code opens that device's page.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../images/data-trail-device-page.jpg" alt="Three phone screens: a flood monitor's information page, its resources and community comments, and the AR finder labeling a flood sensor on a street" loading="lazy">
+                                <figcaption>A device page after scanning, its public data and sponsor details, and the AR view that shows how the sensor works.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../images/data-trail-map-profile.jpg" alt="Three phone screens: a map of nearby devices, a user profile with earned points, and the achievements page" loading="lazy">
+                                <figcaption>The map of nearby devices, a profile with points earned, and achievements.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>Testing in two rounds</h2>
+                    <div class="case-content">
+                        <ol class="steps">
+                            <li><strong>Round one: early prototype, 4 participants</strong><span>Three tasks over video call. People were unsure how to start, found the icons and map markers confusing, missed the swipe gestures on device panels, and did not know what some numbers meant.</span></li>
+                            <li><strong>Revision</strong><span>We added an onboarding introduction, an AR finder with a fuller information panel, a clearer scanning animation, and an expanded achievements system. We also cleaned up the main menu.</span></li>
+                            <li><strong>Round two: revised prototype, 10 participants</strong><span>Five tasks, a short interview about smart technology, and the System Usability Scale questionnaire.</span></li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>Results</h2>
+                    <div class="case-content">
+                        <div class="stats">
+                            <div class="stat"><span class="num">92.8</span><span class="cap">SUS score, above the 80 benchmark for excellent usability</span></div>
+                            <div class="stat"><span class="num">9 of 10</span><span class="cap">would be comfortable with these devices in their neighborhood if they had the app</span></div>
+                            <div class="stat"><span class="num">6 of 10</span><span class="cap">rated their comfort 5 out of 5</span></div>
+                        </div>
+                        <div class="prose">
+                            <p>Participants called the app straightforward and intuitive, and said it taught them about devices they would otherwise have ignored. The points, badges, and AR view made learning feel like exploring. The comments made the app feel like a shared neighborhood space.</p>
+                            <p>Testing also surfaced prototype problems with opening and closing overlays, and people wanted a more accurate map. Both are on the list for a full build.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="case-section">
+                    <h2>What I took from it</h2>
+                    <div class="case-content">
+                        <div class="prose">
+                            <p>Wording changes how participants feel in a session. When I told people they were about to perform a task, they tensed up. When I asked them to complete an exercise, they relaxed. I now write my scripts with that in mind.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="next-project" aria-label="Next project">
+                <span class="label">Next project</span>
+                <a href="amc-app-redesign.html">AMC Theatres app redesign &rarr;</a>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>&copy; <span id="year">2026</span> Brianna Stopper</span>
+            <a href="#top">Back to top</a>
+            <p class="footer-note">Course projects shown here were completed by Pace University students for academic purposes only and are not affiliated with any company.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
