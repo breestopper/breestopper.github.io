@@ -355,6 +355,25 @@ button:focus-visible,
     border-color: var(--border-strong);
 }
 
+/* Scan-to-visit QR */
+.qr-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.qr {
+    display: block;
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
     border-top: 1px solid var(--border);
